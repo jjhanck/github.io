@@ -10,7 +10,6 @@
         <meta name="keywords" content="Analytics, Data, Business Intelligence, Consulting, Dallas, DFW"/>
         <meta name="author" content="Hancock Analytics"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<meta name="google-site-verification" content="H2cqGtNM6Wfbyy4n4mWSp1XN1Z0NrpzOHam13HLeXeM" />
        	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
         <!-- Stlylesheet -->
@@ -18,6 +17,7 @@
 
         <!-- Skin Color -->
         <link rel="stylesheet" href="css/colors/red.css" id="color-skins"/>
+
 	</head>
 	<body>
 
@@ -973,43 +973,21 @@
                             <h2 class="section-title wow fadeInUp">LET’S WORK TOGETHER.</h2>
                         </div>
 
-                        <!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-
-<div id="mc_embed_signup">
-<form action="https://hancockanalytics.us19.list-manage.com/subscribe/post?u=720655f3cac708029c87daa6c&amp;id=881c6d3977" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<h2>Subscribe to our mailing list</h2>
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-<div class="mc-field-group">
-	<label for="mce-NAME">Name </label>
-	<input type="text" value="" name="NAME" class="" id="mce-NAME">
-</div>
-<div class="mc-field-group">
-	<label for="mce-INQUIRY">How can we help?  <span class="asterisk">*</span>
-</label>
-	<input type="text" value="" name="INQUIRY" class="required" id="mce-INQUIRY">
-</div>
-<div class="mc-field-group size1of2">
-	<label for="mce-PHONE">Phone Number </label>
-	<input type="text" name="PHONE" class="" value="" id="mce-PHONE">
-</div>
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_720655f3cac708029c87daa6c_881c6d3977" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-			</form>
-			</div>
-		<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='NAME';ftypes[1]='text';fnames[2]='INQUIRY';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-			<!--End mc_embed_signup-->
+                        <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp">
+                            <div id="message"></div>
+                            <!-- Contact Form will be functional only on your server. Upload to your server when testing. -->
+                            <form method="post" action="php/contact-form.php" name="contactform" id="contactform">
+                                <fieldset>
+                                        <input name="name" type="text" id="name" placeholder="Name"/>
+                                        <input name="email" type="text" id="email" placeholder="Email"/>
+                                        <input name="subject" type="text" id="subject" placeholder="Subject"/>
+                                </fieldset>
+                                <fieldset>
+                                        <textarea name="comments" cols="40" rows="3" id="comments" placeholder="Message"></textarea>
+                                </fieldset>
+                                <input type="submit" class="submit" id="submit" value="Send Message" />
+                            </form>
+                        </div>
 
                         <div class="col-md-12 text-center wow fadeInUp" style="margin-top:20px;">
                             <p>We would love to hear from you so let's get in touch!</p>
@@ -1023,9 +1001,8 @@
             <!-- End Contact Form Section -->
 
             <!-- Start Google Map Section -->
-            <div id="map"></div>
+            <div><script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyB3ciaWtrhk99cWhJ5pSeXMN2wsKVapOig'></script><div style='overflow:hidden;height:503px;width:1075px;'><div id='gmap_canvas' style='height:503px;width:1075px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://embedmap.org/'>google map widget for website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=2a6d77129ad95418d86bdb32f445270fb79d7a25'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(32.8538717,-96.8190224),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(32.8538717,-96.8190224)});infowindow = new google.maps.InfoWindow({content:'<strong>Hancock Analytics</strong><br>75209<br>75209 Dallas<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></div>
             <!-- End Google Map Section -->
-
 
             <!-- Start Video Section -->
             <section id="video-section" class="parallax-section-8">
@@ -1082,7 +1059,7 @@
                                     <ul class="contact-details">
                                         <li><p><i class="icon ion-ios-location-outline highlight"></i> 75209 Dallas, TX, United States</p></li>
                                         <li><p><i class="icon ion-ios-telephone highlight"></i> (530) 988-8136</p></li>
-                                        <li><p><i class="icon ion-android-mail highlight"></i> <a href="mailto:info@hancockanalytics.com">info@hancockanalytics.com</a></p></li>
+                                        <li><p><i class="icon ion-android-mail highlight"></i> <a href="info@hancockanalytics.com">info@hancockanalytics.com</a></p></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1135,22 +1112,11 @@
         <script src="js/plugins/easign1.3.min.js"></script>
         <script src="js/plugins/cubeportfolio.min.js"></script>
         <script src="js/plugins/owlcarousel.min.js"></script>
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB3ciaWtrhk99cWhJ5pSeXMN2wsKVapOig"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBD3JE1T5ssqLMdfRgR1bErpuWNBtIMHbI"></script>
         <script src="js/plugins/gmap3.min.js"></script>
         <script src="js/plugins/wow.min.js"></script>
         <script src="js/plugins/counterup.min.js"></script>
 		<script src="js/scripts.js"></script>
-		<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"720655f3cac708029c87daa6c","lid":"881c6d3977"}) })</script>
 
 	</body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-90818742-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
 </html>
